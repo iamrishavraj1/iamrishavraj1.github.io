@@ -1,3 +1,5 @@
+
+
 $(function () {
   $(".typed").typed({
     strings: ["Coder", "Volunteer", "Developer", "Blogger"],
@@ -37,6 +39,4 @@ $(function () {
 AOS.init();
 
 
- $(window).on("load", function () {
-   $(".loader-wrapper").fadeOut("slow");
- });
+
