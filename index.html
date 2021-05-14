@@ -8,9 +8,9 @@
   <meta 
     name="description"
     content="Developer: Rishav Raj | Coder | Developer, About: Portfolio">
-  <title> Rishav Raj | Coder | Developer </title>
+  <title> Rishav Raj | Developer | Volunteer </title>
     <!--FEVICONS -->
-    <link rel="icon" href="images/rr.png">
+    <link rel="icon" href="favicon.ico">
   <!-- BOOTSTRAP-LINK -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
@@ -29,13 +29,21 @@
   <!-- START -->
   <!-- NAVBAR-START -->
   <nav class=" container navbar navbar-expand-sm navbar-light mb-1">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link display-6 resume p-2 mb-5"
-          href="https://drive.google.com/file/d/1mDHrVhRt8Ku_GBNpKUi4jl62JQXTv9hf/view?usp=sharing"
-          target="_blank">Resume</a>
-      </li>
-    </ul>
+    
+      <div class="container-fluid">
+    <a class="navbar-brand display-6 resume p-2 mb-4" href="https://drive.google.com/file/d/1mDHrVhRt8Ku_GBNpKUi4jl62JQXTv9hf/view?usp=sharing"  target="_blank">Resume</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link"  href="#about">About</a>
+        <a class="nav-link" href="#work">Exprience</a>
+        <a class="nav-link" href="#project">Projects</a>
+        <a class="nav-link " href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
   </nav>
   <section class="container">
     <div class="row section-1">
@@ -52,9 +60,11 @@
           <li><a href="https://www.linkedin.com/in/iamrishavraj1" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a></li>
-          <li><a href="https://www.facebook.com/iamrishavraj1" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
+            
+             <li><a href="https://codepen.io/iamrishavraj1" target="_blank">
+              <ion-icon name="logo-codepen"></ion-icon>
             </a></li>
+
           <li><a href="https://twitter.com/iamrishavraj1" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>
             </a></li>
@@ -73,7 +83,7 @@
     </div>
   </section>
 
-  <section class="container about interests shadow-lg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+  <section class="container interests shadow-lg" data-aos="fade-up" data-aos-anchor-placement="center-bottom" id="about">
     <div class="row section-1">
       <div class="col-lg-8 text-left p-5">
         <h1 class="display-1">A few words about me</h1>
@@ -193,8 +203,8 @@
     </div>
   </section>
 
-  <section class="container interests " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-    <h1 class="display-1 mt-5">Projects</h4>
+  <section class="container interests " data-aos="fade-up" data-aos-anchor-placement="center-bottom" id="project">
+    <h1 class="display-1 mt-5">Some Things I've Built</h4>
       <div class="row mt-5 mb-5">
         <div class="col-md-4">
           <div class="blog-entry">
@@ -275,13 +285,13 @@
       <div class="py-4">
         <div class="desc">
           <h4>Bachelor's Degree in Mechanical Engineering</h4>
-          <p>Birla Institute of Technology, Mesra</p>
+          <p><a href="https://www.bitmesra.ac.in/"> Birla Institute of Technology, Mesra</a></p>
         </div>
         <div>
           <p>2019 - 2023</p>
         </div>
       </div>
-      <h1 class="display-1 mt-5 ">Internship</h1>
+      <h1 class="display-1 mt-5 " id="work">Internship</h1>
       <div class="row d-flex">
         <div class="col-md-10">
           <div class="mt-3">
@@ -316,7 +326,7 @@
           <div class="py-4">
             <div class="desc">
               <h4>Volunteer</h4>
-              <p><a href="https://www.cncf.io/people/ambassadors/">National Service Scheme</a></p>
+              <p><a href="https://nss.gov.in/">National Service Scheme</a></p>
             </div>
             <div>
               <p>July 2019 - Present</p>
@@ -362,7 +372,7 @@
           <div class="py-4">
             <div class="desc">
               <h4>Startup201 Student Partner 2</h4>
-              <p><a href="https://www.youtube.com/c/CodeforCause">Startup201</a></p>
+              <p><a href="https://startup201.com/">Startup201</a></p>
             </div>
             <div>
               <p>May 2020 - June</p>
@@ -413,10 +423,13 @@
       </div>
   </section>
   <hr>
-  <section class="container interests text-center  ">
+  <section class="container interests text-center  " id="contact">
     <div class="text-left">
       <div class="pt-5">
         <h1 class="mb-5">Let's Connect with me</h1>
+        <h4 class="mb-5 h4">My inbox is always open. Whether you have a question or just want to say 
+                                <br/>
+                                hello, I'll try my best to get back to you! Feel free to contact me about any <br/> relevant internship/job updates. </h4>
 
         <ul class="social-links list-unstyled mt-4 text-center ">
           <li><a  href="mailto:iamrisharaj1@gmail.com" target="_blank">
@@ -428,8 +441,8 @@
           <li><a href="https://www.linkedin.com/in/iamrishavraj1" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a></li>
-          <li><a href="https://www.facebook.com/iamrishavraj1" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
+          <li><a href="https://codepen.io/iamrishavraj1" target="_blank">
+              <ion-icon name="logo-codepen"></ion-icon>
             </a></li>
           <li><a href="https://twitter.com/iamrishavraj1" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>
@@ -445,7 +458,7 @@
       </div>
     </div>
     <div class="mt-5 mb-5 text-center">
-      <h4>Make with 🧡</h1>
+      <h4>Make with 🧡 by Rishav Raj</h1>
     </div>
   </section>
   <!-- END -->
@@ -469,9 +482,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="index.js"></script>
-<!-- <div class="loader-wrapper">
+<div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
-      </div> -->
+      </div>
 </body>
 
 </html>

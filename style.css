@@ -173,12 +173,16 @@ a {
   color: #efefef;
   background-color: transparent;
   border: 2px solid #000000;
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   margin-top: 20px;
   font-family: "Barlow", sans-serif;
   font-weight: 300;
   transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover{
+  border-bottom: 1px solid #000;
 }
 
 @media (max-width: 700px) {
@@ -189,7 +193,7 @@ a {
   }
 }
 
-/* lodding loder
+/* /* lodding loder */
 .loader-wrapper {
   display: flex;
   align-items: center;
