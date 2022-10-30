@@ -24,7 +24,7 @@ const Home = ({ title }) => {
                       src={img}
                       alt={Name}
                       width="100%"
-                      className="img-fluid my-auto pb-5 rounded-circle"
+                      className="img-fluid my-auto pb-5  rounded-circle"
                     />
                   </picture>
                 </div>
