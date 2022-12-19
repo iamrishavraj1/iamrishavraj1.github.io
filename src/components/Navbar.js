@@ -78,7 +78,7 @@ const Navbar = () => {
                         aria-current="page"
                         to="/exprience"
                       >
-                        Exprience
+                       Experience
                       </NavLink>
                     </li>
                     <li className="nav-item">
