@@ -9,7 +9,7 @@ const SocialIcon = () => {
           <>
             <ul className="social-links list-unstyled mt-4 text-center ">
               <li>
-                <a href={link} target="_blank" rel="noreferrer">
+                <a  className="icon-class" href={link} target="_blank" rel="noreferrer">
                   {logo}
                 </a>
               </li>
