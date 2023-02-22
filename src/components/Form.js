@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactGA from "react-ga4";
+// import ReactGA from "react-ga4";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
