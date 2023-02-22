@@ -30,8 +30,9 @@ const Home = ({ title }) => {
                   </picture>
                 </div>
               </div>
+         <Form />
             </section>
-            <Form />
+     
           </>
         );
       })}
