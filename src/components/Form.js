@@ -77,7 +77,7 @@ const Form = () => {
         ></textarea>
       </div>
       <button
-        type="submit"
+        type="button"
         className="btn btn-primary"
         onClick={checkG4}
         disabled={!isValid}
