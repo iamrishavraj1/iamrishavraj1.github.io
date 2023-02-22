@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import about from "../aboutData";
 import SocialIcon from "../components/SocialIcon";
+import Form from "../components/Form";
 
 const Home = ({ title }) => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const Home = ({ title }) => {
                 </div>
               </div>
             </section>
+            <Form />
           </>
         );
       })}
