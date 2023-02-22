@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ReactGA from "react-ga4";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -8,6 +8,10 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    ReactGA.event({
+      action: "submit",
+      category: "Landing_Page_Form",
+    });
     console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
   };
 
