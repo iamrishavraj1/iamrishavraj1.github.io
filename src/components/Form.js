@@ -8,10 +8,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    ReactGA.event({
-      action: "submit",
-      category: "Landing_Page_Form",
-    });
+   
     console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
   };
 
