@@ -16,8 +16,8 @@ const About = ({ title }) => {
                 <div className="col-sm-12">
                   <h2 className="display-2">{describe}</h2>
                   <p className="lead"> {detail} </p>
-                  <button className="btn btn-block btn-lg resume-btn">
-                    <a href={resume} target="_blank" rel="noreferrer">
+                  <button className="btn btn-block btn-lg">
+                    <a href={resume} className="resume-btn" target="_blank" rel="noreferrer">
                       Resume
                     </a>
                   </button>
