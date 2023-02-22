@@ -80,7 +80,7 @@ const Form = () => {
         type="button"
         className="btn btn-primary"
         onClick={checkG4}
-        disabled={!isValid}
+
       >
         Submit
       </button>
