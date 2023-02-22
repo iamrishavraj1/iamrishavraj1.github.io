@@ -1,16 +1,22 @@
 import React, { useState } from "react";
-// import ReactGA from "react-ga4";
+import ReactGA from "react-ga4";
 const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isValid, setIsValid] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-   
-    console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+  const checkG4 = () => {
+    ReactGA.event({
+      action: "Landing-Page-Form",
+      category: "Submit-FORM",
+    });
   };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+  // };
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -33,7 +39,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <div className="form-group">
         <label htmlFor="name">Name:</label>
         <input
@@ -70,7 +76,12 @@ const Form = () => {
           onBlur={handleValidation}
         ></textarea>
       </div>
-      <button type="submit" className="btn btn-primary" disabled={!isValid}>
+      <button
+        type="submit"
+        className="btn btn-primary"
+        onClick={checkG4}
+        disabled={!isValid}
+      >
         Submit
       </button>
     </form>
