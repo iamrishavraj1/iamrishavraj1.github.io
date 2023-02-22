@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import ReactGA from "react-ga4";
 
 
-ReactGA.isInitialized("")
+ReactGA.isInitialized("G-8BP9YYP0MR")
 const App = withRouter(({ location }) => {
   return (
     <>
