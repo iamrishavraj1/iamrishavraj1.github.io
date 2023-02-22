@@ -8,10 +8,10 @@ import Project from "./pages/Project";
 import Exprience from "./pages/Exprience";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
-// import ReactGA from "react-ga4";
+import ReactGA from "react-ga4";
 
+ReactGA.initialize("G-8BP9YYP0MR");
 
-// ReactGA.isInitialized("G-8BP9YYP0MR")
 const App = withRouter(({ location }) => {
   return (
     <>
