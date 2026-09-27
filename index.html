@@ -156,6 +156,25 @@
   .stack h4{font-family:var(--mono);font-size:12.5px;color:var(--teal);margin-bottom:10px;font-weight:600}
   .stack p{font-family:var(--mono);font-size:13px;color:var(--dim);line-height:1.9}
 
+  /* experience */
+  .xp{display:flex;flex-direction:column;gap:16px}
+  .xp-item{border:1px solid var(--border);border-radius:14px;padding:24px 26px;background:var(--surface)}
+  .xp-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+  .xp-top h3{font-size:17.5px;letter-spacing:-.3px}
+  .xp-top h3 .co{color:var(--blue)}
+  .xp-top .when{font-family:var(--mono);font-size:12.5px;color:var(--faint)}
+  .xp-item ul{margin:13px 0 0;list-style:none;display:flex;flex-direction:column;gap:9px}
+  .xp-item li{color:var(--dim);font-size:14.5px;padding-left:20px;position:relative}
+  .xp-item li::before{content:"▸";position:absolute;left:0;color:var(--teal)}
+  .xp-item li b{color:var(--text);font-weight:600}
+
+  /* achievements */
+  .ach{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .ach .item{border:1px solid var(--border);border-radius:12px;padding:20px 22px;background:rgba(16,26,48,.45)}
+  .ach .item .ic{font-size:22px}
+  .ach .item h4{font-size:15.5px;margin-top:8px;letter-spacing:-.2px}
+  .ach .item p{color:var(--dim);font-size:13.5px;margin-top:4px}
+
   /* about */
   .about{border:1px solid var(--border);border-radius:14px;padding:30px 32px;background:var(--surface)}
   .about p{color:var(--dim);font-size:15.5px;max-width:46em}
@@ -202,8 +221,8 @@
     <a class="logo" href="#top" style="text-decoration:none">RR<em>_</em></a>
     <div class="nav-links">
       <a href="#projects">projects</a>
-      <a href="#stack" class="hide-s">stack</a>
-      <a href="#about" class="hide-s">about</a>
+      <a href="#experience">experience</a>
+      <a href="#writing" class="hide-s">writing</a>
       <a href="#contact">contact</a>
       <a href="https://github.com/iamrishavraj1">github ↗</a>
     </div>
@@ -277,7 +296,70 @@
     <div class="nums">
       <div class="num reveal"><b>3+ yrs</b><span>shipping production software — frontends, services, data pipelines</span></div>
       <div class="num reveal"><b>40%</b><span>of support cases auto-closed by an AI feedback engine I built at work</span></div>
-      <div class="num reveal"><b>15k+</b><span>reads across my technical writing</span></div>
+      <div class="num reveal"><b>₹0</b><span>compute cost of my AI stack — local-first, Ollama on-device</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><b>$</b> cat experience.log — where I've shipped</div>
+    <div class="xp">
+      <div class="xp-item reveal">
+        <div class="xp-top">
+          <h3><span class="co">Software Development Engineer II (SDE-2)</span> · Virohan Pvt. Ltd.</h3>
+          <span class="when">Aug 2023 – Present · Gurgaon, India</span>
+        </div>
+        <ul>
+          <li><b>Built an AI feedback engine</b> that classifies, summarizes and routes feedback to the right owner — auto-closes <b>40% of cases</b>, cutting manual triage by <b>60%</b>.</li>
+          <li>Reworked payment processing spread across order, confirmation and recording flows into <b>one service with a single source of truth</b> for payment state.</li>
+          <li>Fixed reporting and data-pipeline issues by validating queries and correcting SQL transformations across <b>2M+ records</b>.</li>
+          <li>Built and maintain backend services and APIs with <b>Python, FastAPI, Flask, PostgreSQL, AWS and Azure</b>; debug production issues across APIs, databases, queues and telemetry.</li>
+          <li>Defined practical guidelines for using <b>AI coding tools and agents</b> — context management, generated code, human review.</li>
+        </ul>
+      </div>
+      <div class="xp-item reveal">
+        <div class="xp-top">
+          <h3><span class="co">Junior Web Developer</span> · BotX Automations Pvt. Ltd.</h3>
+          <span class="when">Oct 2021 – Feb 2022 · Kozhikode, India</span>
+        </div>
+        <ul>
+          <li>Built client-facing web apps with <b>React.js and JavaScript</b>, improving frontend performance and cross-team development efficiency.</li>
+          <li>Developed a library of <b>reusable React components</b> that cut technical debt and sped up future feature work.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ach" style="margin-top:44px">
+      <div class="item reveal"><div class="ic">🏅</div><h4>Dharmveer Award</h4><p>High Integrity &amp; Ownership — for delivery quality and scalable architecture, at work.</p></div>
+      <div class="item reveal"><div class="ic">🦈</div><h4>Pull Shark ×2 · YOLO</h4><p>GitHub achievement badges for active, merged open-source contribution.</p></div>
+      <div class="item reveal"><div class="ic">✍️</div><h4>15,000+ reads</h4><p>Across technical blogs on dev.to, Hashnode and Medium.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="wrap">
+    <div class="sec-head reveal"><b>$</b> open ./writing — things I've explained in public</div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="top"><span class="idx">dev.to</span><span class="chip shipped">✍️ writing</span></div>
+        <h3><a href="https://dev.to/iamrishavraj1">dev.to/iamrishavraj1</a></h3>
+        <p>JavaScript and React deep-dives — "Function in Every Programming Language", "What is React Prop Drilling and Context API", and more.</p>
+        <a class="go" href="https://dev.to/iamrishavraj1">read on dev.to →</a>
+      </article>
+      <article class="card reveal">
+        <div class="top"><span class="idx">hashnode</span><span class="chip shipped">✍️ writing</span></div>
+        <h3><a href="https://iamrishavraj1.hashnode.dev">iamrishavraj1.hashnode.dev</a></h3>
+        <p>CSS experiments and frontend fundamentals — including building a Coke cup in pure CSS, because why not.</p>
+        <a class="go" href="https://iamrishavraj1.hashnode.dev">read on hashnode →</a>
+      </article>
+      <article class="card reveal">
+        <div class="top"><span class="idx">medium</span><span class="chip shipped">✍️ writing</span></div>
+        <h3><a href="https://iamrishavraj1.medium.com">iamrishavraj1.medium.com</a></h3>
+        <p>Longer writes on web development and the journey from mechanical engineering into software.</p>
+        <a class="go" href="https://iamrishavraj1.medium.com">read on medium →</a>
+      </article>
     </div>
   </div>
 </section>
@@ -336,7 +418,7 @@
   <div class="wrap foot">
     <span>© <span id="yr">2026</span> Rishav Raj</span>
     <span>no framework · one html file · <b style="color:var(--teal)">~30 KB</b></span>
-    <a href="https://github.com/iamrishavraj1/iamrishavraj1.github.io">view source ↗</a>
+    <a href="https://github.com/iamrishavraj1/personalWebsiteRepo">view source ↗</a>
   </div>
 </footer>
 
